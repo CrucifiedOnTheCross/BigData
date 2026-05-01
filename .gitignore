@@ -1,1 +1,13 @@
 *.ipynb_checkpoints
+apache-maven-3.8.9/
+jdk-17.0.18+8/
+apache-maven-3.8.9-bin.zip
+temurin17.zip
+L1 - Introduction to Apache Spark/lab1-java/.m2/
+L1 - Introduction to Apache Spark/lab1-java/target/
+L2 - Reports with Apache Spark/lab2-java/.m2/
+L2 - Reports with Apache Spark/lab2-java/target/
+L3 - Stream processing with Apache Flink/flink-training-exercises/.m2/
+L3 - Stream processing with Apache Flink/flink-training-exercises/target/
+L4 - ZooKeeper/lab4-java/.m2/
+L4 - ZooKeeper/lab4-java/target/
