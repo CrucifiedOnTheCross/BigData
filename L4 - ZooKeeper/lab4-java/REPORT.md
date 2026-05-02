@@ -218,6 +218,19 @@ Tests run: 4, Failures: 0, Errors: 0, Skipped: 0
 BUILD SUCCESS
 ```
 
+Материалы проверки сохранены в репозитории:
+
+- лог тестов ZooKeeper: `reports/evidence/lab4_mvn_test.log`;
+- скриншот: `reports/evidence/screenshots/lab4/lab4_mvn_test.png`.
+
+Проверка скриншота:
+
+- `lab4_mvn_test.png` показывает проект `lab4-zookeeper-java`, тесты `AnimalBarrierTest`, `DiningPhilosophersTest`, `TwoPhaseCommitTest`, итог `Tests run: 4` и `BUILD SUCCESS`.
+
+Скриншот:
+
+![ЛР4: тесты ZooKeeper](../../reports/evidence/screenshots/lab4/lab4_mvn_test.png)
+
 ## Результат работы
 
 В результате лабораторной работы реализованы три распределенных сценария:

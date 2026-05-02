@@ -144,6 +144,19 @@ Tests run: 9, Failures: 0, Errors: 0, Skipped: 0
 BUILD SUCCESS
 ```
 
+Материалы проверки сохранены в репозитории:
+
+- лог Java-тестов Flink: `reports/evidence/lab3_flink_java_tests.log`;
+- скриншот: `reports/evidence/screenshots/lab3/lab3_flink_tests.png`.
+
+Проверка скриншота:
+
+- `lab3_flink_tests.png` показывает запуск `RideCleansingTest`, `ExpiringStateTest`, `RidesAndFaresTest`, `HourlyTipsTest`, итог `Tests run: 9`, `Failures: 0`, `Errors: 0` и `BUILD SUCCESS`.
+
+Скриншот:
+
+![ЛР3: Java-тесты Flink](../../reports/evidence/screenshots/lab3/lab3_flink_tests.png)
+
 ## Результат работы
 
 В результате были реализованы четыре потоковые задачи:

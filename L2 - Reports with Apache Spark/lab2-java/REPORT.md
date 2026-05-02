@@ -145,6 +145,31 @@ BUILD SUCCESS
 
 В процессе запуска Spark может вывести предупреждение об отсутствии `winutils.exe`. Это предупреждение не мешает работе: интеграционный тест Parquet проходит успешно.
 
+Материалы проверки сохранены в репозитории:
+
+- лог тестов: `reports/evidence/lab2_mvn_test.log`;
+- лог сборки: `reports/evidence/lab2_mvn_package.log`;
+- лог запуска приложения: `reports/evidence/lab2_application.log`;
+- лог просмотра Parquet-папки: `reports/evidence/lab2_parquet_listing.log`;
+- скриншоты: `reports/evidence/screenshots/lab2`.
+
+Проверка скриншотов:
+
+- `lab2_mvn_test.png` подтверждает запуск тестов `ru.bigdata.lab2.*`, итог `Tests run: 9` и `BUILD SUCCESS`;
+- `lab2_mvn_package.png` подтверждает сборку проекта `lab2-java` и создание jar;
+- `lab2_application_show.png` показывает строку `Saved parquet report to` и таблицу `show()` с top-10 языков;
+- `lab2_parquet_folder.png` подтверждает наличие `_SUCCESS` и `part-*.parquet` в `target/language-report-parquet`.
+
+Скриншоты:
+
+![ЛР2: запуск тестов](../../reports/evidence/screenshots/lab2/lab2_mvn_test.png)
+
+![ЛР2: сборка проекта](../../reports/evidence/screenshots/lab2/lab2_mvn_package.png)
+
+![ЛР2: вывод отчета Spark](../../reports/evidence/screenshots/lab2/lab2_application_show.png)
+
+![ЛР2: файлы Parquet](../../reports/evidence/screenshots/lab2/lab2_parquet_folder.png)
+
 ## Команда запуска приложения
 
 Сборка:

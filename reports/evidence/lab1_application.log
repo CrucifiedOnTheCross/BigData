@@ -1,0 +1,52 @@
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+SLF4J: Failed to load class "org.slf4j.impl.StaticMDCBinder".
+SLF4J: Defaulting to no-operation MDCAdapter implementation.
+SLF4J: See http://www.slf4j.org/codes.html#no_static_mdc_binder for further details.
+Lab 1 results
+================
+Valid trips: 669957, skipped trips: 2
+Valid stations: 70, skipped stations: 0
+
+1. Bike with maximum total ride time
+   Bike ID: 535, total duration: 18611693 sec
+2. Maximum geodesic distance between stations
+   SJSU - San Salvador at 9th (16) <-> Embarcadero at Sansome (60), distance: 69.921 km
+3. Path of the bike with maximum total ride time
+   Trips in path: 1328
+   Stations in reconstructed path: 1607
+   Path preview: Post at Kearney -> San Francisco Caltrain (Townsend at 4th) -> San Francisco Caltrain 2 (330 Townsend) -> Market at Sansome -> 2nd at South Park -> 2nd at Townsend -> Davis at Jackson -> San Francisco City Hall -> Civic Center BART (7th at Market) -> Post at Kearney -> Embarcadero at Sansome -> Washington at Kearney -> Market at Sansome -> Market at Sansome -> 2nd at Folsom -> 2nd at Townsend -> Temporary Transbay Terminal (Howard at Beale) -> 2nd at Townsend -> Embarcadero at Sansome -> Clay at Battery -> Harry Bridges Plaza (Ferry Building) -> Clay at Battery -> San Francisco Caltrain (Townsend at 4th) -> Steuart at Market -> 2nd at Townsend -> Harry Bridges Plaza (Ferry Building) -> Townsend at 7th -> San Francisco Caltrain (Townsend at 4th) -> San Francisco Caltrain 2 (330 Townsend) -> San Francisco Caltrain 2 (330 Townsend) -> ...
+   First five segments:
+   - 2013-08-29T19:32: Post at Kearney -> San Francisco Caltrain (Townsend at 4th) (1245 sec)
+   - 2013-08-29T21:38: San Francisco Caltrain (Townsend at 4th) -> San Francisco Caltrain 2 (330 Townsend) (423 sec)
+   - 2013-08-30T08:40: San Francisco Caltrain 2 (330 Townsend) -> Market at Sansome (842 sec)
+   - 2013-08-30T09:10: Market at Sansome -> 2nd at South Park (498 sec)
+   - 2013-09-01T12:58: 2nd at Townsend -> Davis at Jackson (1671 sec)
+4. Number of bikes in the system
+   700
+5. Users with more than 3 hours total ride time
+   Assumption: a user is identified by subscription_type + zip_code because the dataset does not contain a dedicated user id.
+   Total users found: 3915
+   Customer / nil -> 45725550 sec
+   Subscriber / 94107 -> 43445173 sec
+   Subscriber / 94105 -> 22051888 sec
+   Subscriber / 94133 -> 18590706 sec
+   Customer / 95531 -> 17270400 sec
+   Subscriber / 94103 -> 15162220 sec
+   Subscriber / 94102 -> 12389450 sec
+   Subscriber / 94111 -> 12227704 sec
+   Subscriber / 94109 -> 7610400 sec
+   Subscriber / 95112 -> 7008342 sec
+   Customer / 94102 -> 6738571 sec
+   Customer / 94107 -> 6311989 sec
+   Customer / 95112 -> 5734028 sec
+   Subscriber / 94117 -> 5274875 sec
+   Subscriber / 94158 -> 4956118 sec
+   Subscriber / 94110 -> 4681344 sec
+   Subscriber / 94611 -> 4486112 sec
+   Customer / 94109 -> 4446728 sec
+   Subscriber / 94403 -> 4115366 sec
+   Subscriber / 94025 -> 4098546 sec
+   ... truncated, showing top 20 users by total duration
+

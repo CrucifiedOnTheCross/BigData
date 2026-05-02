@@ -138,6 +138,27 @@ Tests run: 4, Failures: 0, Errors: 0, Skipped: 0
 BUILD SUCCESS
 ```
 
+Материалы проверки сохранены в репозитории:
+
+- лог тестов: `reports/evidence/lab1_mvn_test.log`;
+- лог сборки: `reports/evidence/lab1_mvn_package.log`;
+- лог запуска приложения: `reports/evidence/lab1_application.log`;
+- скриншоты: `reports/evidence/screenshots/lab1`.
+
+Проверка скриншотов:
+
+- `lab1_mvn_package.png` подтверждает успешную сборку и `BUILD SUCCESS`;
+- `lab1_application_results.png` подтверждает вывод пяти задач по `trips.csv` и `stations.csv`;
+- `lab1_mvn_test.png` показывает успешный итог `Tests run: 4, Failures: 0, Errors: 0`. В логе `reports/evidence/lab1_mvn_test.log` также зафиксирован `BUILD SUCCESS`.
+
+Скриншоты:
+
+![ЛР1: запуск тестов](../../reports/evidence/screenshots/lab1/lab1_mvn_test.png)
+
+![ЛР1: сборка проекта](../../reports/evidence/screenshots/lab1/lab1_mvn_package.png)
+
+![ЛР1: результаты приложения](../../reports/evidence/screenshots/lab1/lab1_application_results.png)
+
 ## Команда запуска приложения
 
 После сборки приложение можно запустить как обычный Java-класс.

@@ -1,0 +1,250 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------------------< ru.bigdata:lab2-java >------------------------
+[INFO] Building lab2-java 1.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ lab2-java ---
+[INFO] Deleting C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ lab2-java ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\src\main\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.13.0:compile (default-compile) @ lab2-java ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 8 source files with javac [debug release 17] to target\classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ lab2-java ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\src\test\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.13.0:testCompile (default-testCompile) @ lab2-java ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 4 source files with javac [debug release 17] to target\test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:3.2.5:test (default-test) @ lab2-java ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running ru.bigdata.lab2.Lab2ParquetIntegrationTest
+Using Spark's default log4j profile: org/apache/spark/log4j2-defaults.properties
+26/05/02 15:21:52 INFO SparkContext: Running Spark version 3.5.1
+26/05/02 15:21:52 INFO SparkContext: OS info Windows 11, 10.0, amd64
+26/05/02 15:21:52 INFO SparkContext: Java version 17.0.18
+26/05/02 15:21:52 WARN Shell: Did not find winutils.exe: java.io.FileNotFoundException: java.io.FileNotFoundException: HADOOP_HOME and hadoop.home.dir are unset. -see https://wiki.apache.org/hadoop/WindowsProblems
+26/05/02 15:21:52 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+26/05/02 15:21:53 INFO ResourceUtils: ==============================================================
+26/05/02 15:21:53 INFO ResourceUtils: No custom resources configured for spark.driver.
+26/05/02 15:21:53 INFO ResourceUtils: ==============================================================
+26/05/02 15:21:53 INFO SparkContext: Submitted application: Lab2ParquetIntegrationTest
+26/05/02 15:21:53 INFO ResourceProfile: Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 1, script: , vendor: , memory -> name: memory, amount: 1024, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+26/05/02 15:21:53 INFO ResourceProfile: Limiting resource is cpu
+26/05/02 15:21:53 INFO ResourceProfileManager: Added ResourceProfile id: 0
+26/05/02 15:21:53 INFO SecurityManager: Changing view acls to: tooor
+26/05/02 15:21:53 INFO SecurityManager: Changing modify acls to: tooor
+26/05/02 15:21:53 INFO SecurityManager: Changing view acls groups to: 
+26/05/02 15:21:53 INFO SecurityManager: Changing modify acls groups to: 
+26/05/02 15:21:53 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: tooor; groups with view permissions: EMPTY; users with modify permissions: tooor; groups with modify permissions: EMPTY
+26/05/02 15:21:53 INFO Utils: Successfully started service 'sparkDriver' on port 61881.
+26/05/02 15:21:53 INFO SparkEnv: Registering MapOutputTracker
+26/05/02 15:21:53 INFO SparkEnv: Registering BlockManagerMaster
+26/05/02 15:21:53 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+26/05/02 15:21:53 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+26/05/02 15:21:53 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+26/05/02 15:21:53 INFO DiskBlockManager: Created local directory at C:\Users\tooor\AppData\Local\Temp\blockmgr-b7dd221e-2274-4a01-bb7a-b96672af85da
+26/05/02 15:21:53 INFO MemoryStore: MemoryStore started with capacity 2.3 GiB
+26/05/02 15:21:53 INFO SparkEnv: Registering OutputCommitCoordinator
+26/05/02 15:21:54 INFO JettyUtils: Start Jetty 0.0.0.0:4040 for SparkUI
+26/05/02 15:21:54 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+26/05/02 15:21:54 INFO Executor: Starting executor ID driver on host WIN-QKC3MJARA7J
+26/05/02 15:21:54 INFO Executor: OS info Windows 11, 10.0, amd64
+26/05/02 15:21:54 INFO Executor: Java version 17.0.18
+26/05/02 15:21:54 INFO Executor: Starting executor with user classpath (userClassPathFirst = false): ''
+26/05/02 15:21:54 INFO Executor: Created or updated repl class loader org.apache.spark.util.MutableURLClassLoader@23da79eb for default.
+26/05/02 15:21:54 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 61882.
+26/05/02 15:21:54 INFO NettyBlockTransferService: Server created on 127.0.0.1:61882
+26/05/02 15:21:54 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+26/05/02 15:21:54 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 61882, None)
+26/05/02 15:21:54 INFO BlockManagerMasterEndpoint: Registering block manager 127.0.0.1:61882 with 2.3 GiB RAM, BlockManagerId(driver, 127.0.0.1, 61882, None)
+26/05/02 15:21:54 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 61882, None)
+26/05/02 15:21:54 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, 127.0.0.1, 61882, None)
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 16.88 s -- in ru.bigdata.lab2.Lab2ParquetIntegrationTest
+[INFO] Running ru.bigdata.lab2.LanguageDictionaryTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 s -- in ru.bigdata.lab2.LanguageDictionaryTest
+[INFO] Running ru.bigdata.lab2.PopularityReportServiceTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.318 s -- in ru.bigdata.lab2.PopularityReportServiceTest
+[INFO] Running ru.bigdata.lab2.StackOverflowXmlParserTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.069 s -- in ru.bigdata.lab2.StackOverflowXmlParserTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] --- maven-jar-plugin:3.4.2:jar (default-jar) @ lab2-java ---
+[INFO] Building jar: C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\lab2-java-1.0-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-dependency-plugin:3.6.1:copy-dependencies (copy-dependencies) @ lab2-java ---
+[INFO] Copying spark-sql_2.12-3.5.1.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\spark-sql_2.12-3.5.1.jar
+[INFO] Copying rocksdbjni-8.3.2.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\rocksdbjni-8.3.2.jar
+[INFO] Copying univocity-parsers-2.9.1.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\univocity-parsers-2.9.1.jar
+[INFO] Copying spark-sketch_2.12-3.5.1.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\spark-sketch_2.12-3.5.1.jar
+[INFO] Copying spark-core_2.12-3.5.1.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\spark-core_2.12-3.5.1.jar
+[INFO] Copying avro-1.11.2.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\avro-1.11.2.jar
+[INFO] Copying avro-mapred-1.11.2.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\avro-mapred-1.11.2.jar
+[INFO] Copying avro-ipc-1.11.2.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\avro-ipc-1.11.2.jar
+[INFO] Copying xz-1.9.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\xz-1.9.jar
+[INFO] Copying chill_2.12-0.10.0.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\chill_2.12-0.10.0.jar
+[INFO] Copying kryo-shaded-4.0.2.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\kryo-shaded-4.0.2.jar
+[INFO] Copying minlog-1.3.0.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\minlog-1.3.0.jar
+[INFO] Copying objenesis-2.5.1.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\objenesis-2.5.1.jar
+[INFO] Copying chill-java-0.10.0.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\chill-java-0.10.0.jar
+[INFO] Copying hadoop-client-api-3.3.4.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\hadoop-client-api-3.3.4.jar
+[INFO] Copying hadoop-client-runtime-3.3.4.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\hadoop-client-runtime-3.3.4.jar
+[INFO] Copying commons-logging-1.1.3.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\commons-logging-1.1.3.jar
+[INFO] Copying spark-launcher_2.12-3.5.1.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\spark-launcher_2.12-3.5.1.jar
+[INFO] Copying spark-kvstore_2.12-3.5.1.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\spark-kvstore_2.12-3.5.1.jar
+[INFO] Copying leveldbjni-all-1.8.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\leveldbjni-all-1.8.jar
+[INFO] Copying spark-network-common_2.12-3.5.1.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\spark-network-common_2.12-3.5.1.jar
+[INFO] Copying tink-1.9.0.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\tink-1.9.0.jar
+[INFO] Copying gson-2.10.1.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\gson-2.10.1.jar
+[INFO] Copying protobuf-java-3.19.6.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\protobuf-java-3.19.6.jar
+[INFO] Copying joda-time-2.12.5.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\joda-time-2.12.5.jar
+[INFO] Copying spark-network-shuffle_2.12-3.5.1.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\spark-network-shuffle_2.12-3.5.1.jar
+[INFO] Copying spark-unsafe_2.12-3.5.1.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\spark-unsafe_2.12-3.5.1.jar
+[INFO] Copying spark-common-utils_2.12-3.5.1.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\spark-common-utils_2.12-3.5.1.jar
+[INFO] Copying jul-to-slf4j-2.0.7.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\jul-to-slf4j-2.0.7.jar
+[INFO] Copying jcl-over-slf4j-2.0.7.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\jcl-over-slf4j-2.0.7.jar
+[INFO] Copying log4j-slf4j2-impl-2.20.0.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\log4j-slf4j2-impl-2.20.0.jar
+[INFO] Copying log4j-api-2.20.0.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\log4j-api-2.20.0.jar
+[INFO] Copying log4j-core-2.20.0.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\log4j-core-2.20.0.jar
+[INFO] Copying log4j-1.2-api-2.20.0.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\log4j-1.2-api-2.20.0.jar
+[INFO] Copying activation-1.1.1.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\activation-1.1.1.jar
+[INFO] Copying curator-recipes-2.13.0.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\curator-recipes-2.13.0.jar
+[INFO] Copying curator-framework-2.13.0.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\curator-framework-2.13.0.jar
+[INFO] Copying curator-client-2.13.0.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\curator-client-2.13.0.jar
+[INFO] Copying guava-16.0.1.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\guava-16.0.1.jar
+[INFO] Copying zookeeper-3.6.3.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\zookeeper-3.6.3.jar
+[INFO] Copying zookeeper-jute-3.6.3.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\zookeeper-jute-3.6.3.jar
+[INFO] Copying jakarta.servlet-api-4.0.3.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\jakarta.servlet-api-4.0.3.jar
+[INFO] Copying commons-codec-1.16.0.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\commons-codec-1.16.0.jar
+[INFO] Copying commons-compress-1.23.0.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\commons-compress-1.23.0.jar
+[INFO] Copying commons-lang3-3.12.0.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\commons-lang3-3.12.0.jar
+[INFO] Copying commons-math3-3.6.1.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\commons-math3-3.6.1.jar
+[INFO] Copying commons-text-1.10.0.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\commons-text-1.10.0.jar
+[INFO] Copying commons-io-2.13.0.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\commons-io-2.13.0.jar
+[INFO] Copying commons-collections-3.2.2.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\commons-collections-3.2.2.jar
+[INFO] Copying commons-collections4-4.4.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\commons-collections4-4.4.jar
+[INFO] Copying jsr305-3.0.0.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\jsr305-3.0.0.jar
+[INFO] Copying compress-lzf-1.1.2.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\compress-lzf-1.1.2.jar
+[INFO] Copying snappy-java-1.1.10.3.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\snappy-java-1.1.10.3.jar
+[INFO] Copying lz4-java-1.8.0.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\lz4-java-1.8.0.jar
+[INFO] Copying zstd-jni-1.5.5-4.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\zstd-jni-1.5.5-4.jar
+[INFO] Copying RoaringBitmap-0.9.45.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\RoaringBitmap-0.9.45.jar
+[INFO] Copying shims-0.9.45.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\shims-0.9.45.jar
+[INFO] Copying scala-xml_2.12-2.1.0.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\scala-xml_2.12-2.1.0.jar
+[INFO] Copying scala-library-2.12.18.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\scala-library-2.12.18.jar
+[INFO] Copying scala-reflect-2.12.18.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\scala-reflect-2.12.18.jar
+[INFO] Copying json4s-jackson_2.12-3.7.0-M11.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\json4s-jackson_2.12-3.7.0-M11.jar
+[INFO] Copying json4s-core_2.12-3.7.0-M11.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\json4s-core_2.12-3.7.0-M11.jar
+[INFO] Copying json4s-ast_2.12-3.7.0-M11.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\json4s-ast_2.12-3.7.0-M11.jar
+[INFO] Copying json4s-scalap_2.12-3.7.0-M11.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\json4s-scalap_2.12-3.7.0-M11.jar
+[INFO] Copying jersey-client-2.40.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\jersey-client-2.40.jar
+[INFO] Copying jakarta.ws.rs-api-2.1.6.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\jakarta.ws.rs-api-2.1.6.jar
+[INFO] Copying jakarta.inject-2.6.1.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\jakarta.inject-2.6.1.jar
+[INFO] Copying jersey-common-2.40.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\jersey-common-2.40.jar
+[INFO] Copying jakarta.annotation-api-1.3.5.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\jakarta.annotation-api-1.3.5.jar
+[INFO] Copying osgi-resource-locator-1.0.3.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\osgi-resource-locator-1.0.3.jar
+[INFO] Copying jersey-server-2.40.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\jersey-server-2.40.jar
+[INFO] Copying jakarta.validation-api-2.0.2.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\jakarta.validation-api-2.0.2.jar
+[INFO] Copying jersey-container-servlet-2.40.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\jersey-container-servlet-2.40.jar
+[INFO] Copying jersey-container-servlet-core-2.40.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\jersey-container-servlet-core-2.40.jar
+[INFO] Copying jersey-hk2-2.40.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\jersey-hk2-2.40.jar
+[INFO] Copying hk2-locator-2.6.1.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\hk2-locator-2.6.1.jar
+[INFO] Copying aopalliance-repackaged-2.6.1.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\aopalliance-repackaged-2.6.1.jar
+[INFO] Copying hk2-api-2.6.1.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\hk2-api-2.6.1.jar
+[INFO] Copying hk2-utils-2.6.1.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\hk2-utils-2.6.1.jar
+[INFO] Copying javassist-3.29.2-GA.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\javassist-3.29.2-GA.jar
+[INFO] Copying netty-all-4.1.96.Final.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\netty-all-4.1.96.Final.jar
+[INFO] Copying netty-buffer-4.1.96.Final.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\netty-buffer-4.1.96.Final.jar
+[INFO] Copying netty-codec-4.1.96.Final.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\netty-codec-4.1.96.Final.jar
+[INFO] Copying netty-codec-http-4.1.96.Final.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\netty-codec-http-4.1.96.Final.jar
+[INFO] Copying netty-codec-http2-4.1.96.Final.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\netty-codec-http2-4.1.96.Final.jar
+[INFO] Copying netty-codec-socks-4.1.96.Final.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\netty-codec-socks-4.1.96.Final.jar
+[INFO] Copying netty-common-4.1.96.Final.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\netty-common-4.1.96.Final.jar
+[INFO] Copying netty-handler-4.1.96.Final.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\netty-handler-4.1.96.Final.jar
+[INFO] Copying netty-transport-native-unix-common-4.1.96.Final.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\netty-transport-native-unix-common-4.1.96.Final.jar
+[INFO] Copying netty-handler-proxy-4.1.96.Final.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\netty-handler-proxy-4.1.96.Final.jar
+[INFO] Copying netty-resolver-4.1.96.Final.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\netty-resolver-4.1.96.Final.jar
+[INFO] Copying netty-transport-4.1.96.Final.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\netty-transport-4.1.96.Final.jar
+[INFO] Copying netty-transport-classes-epoll-4.1.96.Final.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\netty-transport-classes-epoll-4.1.96.Final.jar
+[INFO] Copying netty-transport-classes-kqueue-4.1.96.Final.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\netty-transport-classes-kqueue-4.1.96.Final.jar
+[INFO] Copying netty-transport-native-epoll-4.1.96.Final-linux-x86_64.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\netty-transport-native-epoll-4.1.96.Final-linux-x86_64.jar
+[INFO] Copying netty-transport-native-epoll-4.1.96.Final-linux-aarch_64.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\netty-transport-native-epoll-4.1.96.Final-linux-aarch_64.jar
+[INFO] Copying netty-transport-native-kqueue-4.1.96.Final-osx-aarch_64.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\netty-transport-native-kqueue-4.1.96.Final-osx-aarch_64.jar
+[INFO] Copying netty-transport-native-kqueue-4.1.96.Final-osx-x86_64.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\netty-transport-native-kqueue-4.1.96.Final-osx-x86_64.jar
+[INFO] Copying stream-2.9.6.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\stream-2.9.6.jar
+[INFO] Copying metrics-core-4.2.19.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\metrics-core-4.2.19.jar
+[INFO] Copying metrics-jvm-4.2.19.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\metrics-jvm-4.2.19.jar
+[INFO] Copying metrics-json-4.2.19.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\metrics-json-4.2.19.jar
+[INFO] Copying metrics-graphite-4.2.19.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\metrics-graphite-4.2.19.jar
+[INFO] Copying metrics-jmx-4.2.19.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\metrics-jmx-4.2.19.jar
+[INFO] Copying jackson-module-scala_2.12-2.15.2.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\jackson-module-scala_2.12-2.15.2.jar
+[INFO] Copying paranamer-2.8.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\paranamer-2.8.jar
+[INFO] Copying ivy-2.5.1.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\ivy-2.5.1.jar
+[INFO] Copying oro-2.0.8.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\oro-2.0.8.jar
+[INFO] Copying pickle-1.3.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\pickle-1.3.jar
+[INFO] Copying py4j-0.10.9.7.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\py4j-0.10.9.7.jar
+[INFO] Copying commons-crypto-1.1.0.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\commons-crypto-1.1.0.jar
+[INFO] Copying spark-catalyst_2.12-3.5.1.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\spark-catalyst_2.12-3.5.1.jar
+[INFO] Copying spark-sql-api_2.12-3.5.1.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\spark-sql-api_2.12-3.5.1.jar
+[INFO] Copying scala-parser-combinators_2.12-2.3.0.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\scala-parser-combinators_2.12-2.3.0.jar
+[INFO] Copying antlr4-runtime-4.9.3.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\antlr4-runtime-4.9.3.jar
+[INFO] Copying arrow-vector-12.0.1.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\arrow-vector-12.0.1.jar
+[INFO] Copying arrow-format-12.0.1.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\arrow-format-12.0.1.jar
+[INFO] Copying arrow-memory-core-12.0.1.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\arrow-memory-core-12.0.1.jar
+[INFO] Copying jackson-datatype-jsr310-2.15.1.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\jackson-datatype-jsr310-2.15.1.jar
+[INFO] Copying flatbuffers-java-1.12.0.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\flatbuffers-java-1.12.0.jar
+[INFO] Copying arrow-memory-netty-12.0.1.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\arrow-memory-netty-12.0.1.jar
+[INFO] Copying janino-3.1.9.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\janino-3.1.9.jar
+[INFO] Copying commons-compiler-3.1.9.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\commons-compiler-3.1.9.jar
+[INFO] Copying datasketches-java-3.3.0.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\datasketches-java-3.3.0.jar
+[INFO] Copying datasketches-memory-2.1.0.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\datasketches-memory-2.1.0.jar
+[INFO] Copying spark-tags_2.12-3.5.1.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\spark-tags_2.12-3.5.1.jar
+[INFO] Copying orc-core-1.9.2-shaded-protobuf.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\orc-core-1.9.2-shaded-protobuf.jar
+[INFO] Copying orc-shims-1.9.2.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\orc-shims-1.9.2.jar
+[INFO] Copying aircompressor-0.25.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\aircompressor-0.25.jar
+[INFO] Copying annotations-17.0.0.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\annotations-17.0.0.jar
+[INFO] Copying slf4j-api-2.0.7.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\slf4j-api-2.0.7.jar
+[INFO] Copying threeten-extra-1.7.1.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\threeten-extra-1.7.1.jar
+[INFO] Copying orc-mapreduce-1.9.2-shaded-protobuf.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\orc-mapreduce-1.9.2-shaded-protobuf.jar
+[INFO] Copying hive-storage-api-2.8.1.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\hive-storage-api-2.8.1.jar
+[INFO] Copying parquet-column-1.13.1.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\parquet-column-1.13.1.jar
+[INFO] Copying parquet-common-1.13.1.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\parquet-common-1.13.1.jar
+[INFO] Copying parquet-encoding-1.13.1.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\parquet-encoding-1.13.1.jar
+[INFO] Copying audience-annotations-0.13.0.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\audience-annotations-0.13.0.jar
+[INFO] Copying parquet-hadoop-1.13.1.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\parquet-hadoop-1.13.1.jar
+[INFO] Copying parquet-format-structures-1.13.1.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\parquet-format-structures-1.13.1.jar
+[INFO] Copying parquet-jackson-1.13.1.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\parquet-jackson-1.13.1.jar
+[INFO] Copying jackson-databind-2.15.2.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\jackson-databind-2.15.2.jar
+[INFO] Copying jackson-annotations-2.15.2.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\jackson-annotations-2.15.2.jar
+[INFO] Copying jackson-core-2.15.2.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\jackson-core-2.15.2.jar
+[INFO] Copying xbean-asm9-shaded-4.23.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\xbean-asm9-shaded-4.23.jar
+[INFO] Copying junit-jupiter-5.10.2.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\junit-jupiter-5.10.2.jar
+[INFO] Copying junit-jupiter-api-5.10.2.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\junit-jupiter-api-5.10.2.jar
+[INFO] Copying opentest4j-1.3.0.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\opentest4j-1.3.0.jar
+[INFO] Copying junit-platform-commons-1.10.2.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\junit-platform-commons-1.10.2.jar
+[INFO] Copying apiguardian-api-1.1.2.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\apiguardian-api-1.1.2.jar
+[INFO] Copying junit-jupiter-params-5.10.2.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\junit-jupiter-params-5.10.2.jar
+[INFO] Copying junit-jupiter-engine-5.10.2.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\junit-jupiter-engine-5.10.2.jar
+[INFO] Copying junit-platform-engine-1.10.2.jar to C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\dependency\junit-platform-engine-1.10.2.jar
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  27.009 s
+[INFO] Finished at: 2026-05-02T15:22:06+04:00
+[INFO] ------------------------------------------------------------------------

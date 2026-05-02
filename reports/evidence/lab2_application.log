@@ -1,0 +1,147 @@
+Using Spark's default log4j profile: org/apache/spark/log4j2-defaults.properties
+26/05/02 15:24:35 INFO SparkContext: Running Spark version 3.5.1
+26/05/02 15:24:35 INFO SparkContext: OS info Windows 11, 10.0, amd64
+26/05/02 15:24:35 INFO SparkContext: Java version 17.0.18
+26/05/02 15:24:35 WARN Shell: Did not find winutils.exe: java.io.FileNotFoundException: java.io.FileNotFoundException: HADOOP_HOME and hadoop.home.dir are unset. -see https://wiki.apache.org/hadoop/WindowsProblems
+26/05/02 15:24:35 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+26/05/02 15:24:35 INFO ResourceUtils: ==============================================================
+26/05/02 15:24:35 INFO ResourceUtils: No custom resources configured for spark.driver.
+26/05/02 15:24:35 INFO ResourceUtils: ==============================================================
+26/05/02 15:24:35 INFO SparkContext: Submitted application: Lab2ProgrammingLanguagesReport
+26/05/02 15:24:35 INFO ResourceProfile: Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 1, script: , vendor: , memory -> name: memory, amount: 1024, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+26/05/02 15:24:35 INFO ResourceProfile: Limiting resource is cpu
+26/05/02 15:24:35 INFO ResourceProfileManager: Added ResourceProfile id: 0
+26/05/02 15:24:35 INFO SecurityManager: Changing view acls to: tooor
+26/05/02 15:24:35 INFO SecurityManager: Changing modify acls to: tooor
+26/05/02 15:24:35 INFO SecurityManager: Changing view acls groups to: 
+26/05/02 15:24:35 INFO SecurityManager: Changing modify acls groups to: 
+26/05/02 15:24:35 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: tooor; groups with view permissions: EMPTY; users with modify permissions: tooor; groups with modify permissions: EMPTY
+26/05/02 15:24:36 INFO Utils: Successfully started service 'sparkDriver' on port 57137.
+26/05/02 15:24:36 INFO SparkEnv: Registering MapOutputTracker
+26/05/02 15:24:36 INFO SparkEnv: Registering BlockManagerMaster
+26/05/02 15:24:36 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+26/05/02 15:24:36 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+26/05/02 15:24:36 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+26/05/02 15:24:36 INFO DiskBlockManager: Created local directory at C:\Users\tooor\AppData\Local\Temp\blockmgr-9607e085-6b34-49f4-afcb-e86cbd0e34ea
+26/05/02 15:24:36 INFO MemoryStore: MemoryStore started with capacity 2.1 GiB
+26/05/02 15:24:36 INFO SparkEnv: Registering OutputCommitCoordinator
+26/05/02 15:24:36 INFO JettyUtils: Start Jetty 0.0.0.0:4040 for SparkUI
+26/05/02 15:24:36 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+26/05/02 15:24:36 INFO Executor: Starting executor ID driver on host WIN-QKC3MJARA7J
+26/05/02 15:24:36 INFO Executor: OS info Windows 11, 10.0, amd64
+26/05/02 15:24:36 INFO Executor: Java version 17.0.18
+26/05/02 15:24:36 INFO Executor: Starting executor with user classpath (userClassPathFirst = false): ''
+26/05/02 15:24:36 INFO Executor: Created or updated repl class loader org.apache.spark.util.MutableURLClassLoader@59bbe88a for default.
+26/05/02 15:24:36 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 57138.
+26/05/02 15:24:36 INFO NettyBlockTransferService: Server created on 127.0.0.1:57138
+26/05/02 15:24:36 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+26/05/02 15:24:36 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 127.0.0.1, 57138, None)
+26/05/02 15:24:36 INFO BlockManagerMasterEndpoint: Registering block manager 127.0.0.1:57138 with 2.1 GiB RAM, BlockManagerId(driver, 127.0.0.1, 57138, None)
+26/05/02 15:24:36 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 127.0.0.1, 57138, None)
+26/05/02 15:24:36 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, 127.0.0.1, 57138, None)
+Saved parquet report to: C:\Users\tooor\Downloads\big_data\L2 - Reports with Apache Spark\lab2-java\target\language-report-parquet
++----+----+-----------+--------------+
+|year|rank|language   |questionsCount|
++----+----+-----------+--------------+
+|2010|1   |Java       |52            |
+|2010|2   |PHP        |46            |
+|2010|3   |JavaScript |44            |
+|2010|4   |C++        |28            |
+|2010|5   |Python     |26            |
+|2010|6   |Objective-C|23            |
+|2010|7   |C          |20            |
+|2010|8   |Ruby       |12            |
+|2010|9   |Delphi     |8             |
+|2010|10  |AppleScript|3             |
+|2011|1   |PHP        |102           |
+|2011|2   |Java       |93            |
+|2011|3   |JavaScript |83            |
+|2011|4   |C++        |42            |
+|2011|5   |Python     |37            |
+|2011|6   |Objective-C|34            |
+|2011|7   |C          |24            |
+|2011|8   |Ruby       |20            |
+|2011|9   |Perl       |9             |
+|2011|10  |Delphi     |8             |
+|2012|1   |PHP        |154           |
+|2012|2   |JavaScript |132           |
+|2012|3   |Java       |124           |
+|2012|4   |C++        |81            |
+|2012|5   |Python     |69            |
+|2012|6   |Objective-C|45            |
+|2012|7   |C          |27            |
+|2012|8   |Ruby       |27            |
+|2012|9   |Bash       |10            |
+|2012|10  |R          |9             |
+|2013|1   |JavaScript |198           |
+|2013|2   |PHP        |198           |
+|2013|3   |Java       |194           |
+|2013|4   |Python     |90            |
+|2013|5   |C++        |71            |
+|2013|6   |Objective-C|40            |
+|2013|7   |C          |36            |
+|2013|8   |Ruby       |32            |
+|2013|9   |R          |26            |
+|2013|10  |Bash       |12            |
+|2014|1   |JavaScript |239           |
+|2014|2   |Java       |228           |
+|2014|3   |PHP        |167           |
+|2014|4   |Python     |109           |
+|2014|5   |C++        |77            |
+|2014|6   |C          |52            |
+|2014|7   |Objective-C|52            |
+|2014|8   |R          |28            |
+|2014|9   |Ruby       |24            |
+|2014|10  |Swift      |19            |
+|2015|1   |JavaScript |277           |
+|2015|2   |Java       |209           |
+|2015|3   |PHP        |167           |
+|2015|4   |Python     |121           |
+|2015|5   |C++        |86            |
+|2015|6   |Swift      |57            |
+|2015|7   |R          |43            |
+|2015|8   |C          |38            |
+|2015|9   |Objective-C|30            |
+|2015|10  |Ruby       |21            |
+|2016|1   |JavaScript |278           |
+|2016|2   |Java       |184           |
+|2016|3   |PHP        |155           |
+|2016|4   |Python     |146           |
+|2016|5   |C++        |72            |
+|2016|6   |R          |52            |
+|2016|7   |Swift      |52            |
+|2016|8   |C          |32            |
+|2016|9   |Ruby       |24            |
+|2016|10  |Bash       |18            |
+|2017|1   |JavaScript |246           |
+|2017|2   |Java       |204           |
+|2017|3   |Python     |193           |
+|2017|4   |PHP        |138           |
+|2017|5   |C++        |72            |
+|2017|6   |R          |56            |
+|2017|7   |Swift      |28            |
+|2017|8   |C          |25            |
+|2017|9   |TypeScript |20            |
+|2017|10  |Objective-C|19            |
+|2018|1   |Python     |220           |
+|2018|2   |JavaScript |198           |
+|2018|3   |Java       |146           |
+|2018|4   |PHP        |111           |
+|2018|5   |R          |66            |
+|2018|6   |C++        |53            |
+|2018|7   |Swift      |39            |
+|2018|8   |TypeScript |27            |
+|2018|9   |C          |24            |
+|2018|10  |Scala      |23            |
+|2019|1   |Python     |166           |
+|2019|2   |JavaScript |135           |
+|2019|3   |Java       |95            |
+|2019|4   |PHP        |65            |
+|2019|5   |R          |37            |
+|2019|6   |C++        |34            |
+|2019|7   |Swift      |24            |
+|2019|8   |TypeScript |17            |
+|2019|9   |C          |14            |
+|2019|10  |Bash       |11            |
++----+----+-----------+--------------+
+
